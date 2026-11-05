@@ -1,4 +1,5 @@
-#Creator Selection for Little Joys
+# Creator Selection for Little Joys
+
 
 ## Overview
 Little Joys, an Indian kids' nutrition brand, wants to know which 5 of 20 Instagram creators to work with next, and what each should say. This project uses **only the brand's own data** (no general market opinion, no external influencer databases).
