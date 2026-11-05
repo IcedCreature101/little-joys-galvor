@@ -226,6 +226,6 @@ print("\nBy Tier:")
 for tier in ["RECOMMENDED", "STRONG CANDIDATE", "MODERATE FIT", "RECONSIDER"]:
     print(f"\n  {tier}:")
     for r in results_sorted:
-        if r['tier'] == tier:
+        if r['tier'].startswith(tier):
             name_safe = str(r['name']).encode('ascii', errors='replace').decode('ascii') if r['name'] else r['handle']
-    print(f"    {r['handle']} ({name_safe}): {r['total']}/85")
+            print(f"    {r['handle']} ({name_safe}): {r['total']}/85")
