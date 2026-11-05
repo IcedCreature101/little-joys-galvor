@@ -47,11 +47,4 @@ Compliance
 -  Risk deduction mechanism handles data artifacts (authenticity_concerns JSON key for all creators with value "None observed")
 -  Hook type & format recommendations mapped from brand's own ad library (100 ads' hook_type + ad_format distributions)
 
-### Step 4: Initialize Git
-```bash
-# In the repo root (Galvor AI/ or little-joys-data/)
-git init
-git add score_creators.py score_test.py score_all_creators.py README.md
-git commit -m "Initial commit: Creator scoring algorithm for Little Joys assignment"
-git remote add origin <your-repo-url>
-git push -u main origin main
+
