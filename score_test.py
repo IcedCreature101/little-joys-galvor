@@ -1,7 +1,9 @@
 import pandas as pd
 import json
+import os
 
-creators = pd.read_csv('creators.csv', encoding='latin1')
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+creators = pd.read_csv(os.path.join(SCRIPT_DIR, 'little-joys-data', 'creators.csv'), encoding='latin1')
 
 # Sample creator data for manual scoring
 # We'll score: drgarima_mehta, hello_ps8, parentingtips_surat, foodies_by_neha, storiesbyvihaa
