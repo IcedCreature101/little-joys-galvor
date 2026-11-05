@@ -24,7 +24,25 @@ Little Joys, an Indian kids' nutrition brand, wants to know which 5 of 20 Instag
 - **≥40**: STRONG CANDIDATE — good fit with minor adjustments, reliable contingency
 - **≥30**: MODERATE FIT — works only with messaging adjustments, contingency only
 - **<30**: RECONSIDER — significant misalignment, not recommended
+  
+## Code Files
 
+### `score_all_creators.py` — Production Algorithm (Final Deliverable)
+- Scores all 20 creators across all 5 dimensions
+- Produces ranked leaderboard with tier breakdown
+- Uses `SCRIPT_DIR`/`DATA_DIR` logic so it runs from Galvor AI root without `cd` into `little-joys-data`
+- Output: complete 20-creator scoring analysis + ranked leaderboard + tier breakdown
+
+
+### `score_test.py` — Stress-Test Algorithm on 5 Creators
+- Scores 5 selected creators using the full rubric
+- Used during development to identify and fix bugs
+- Same scoring logic as `score_all_creators.py` but on a subset
+
+
+### `score_creators.py` — Print All Creator Attributes
+- Prints basic info for all 20 creators: handles, followers, verified status, themes, format habits, voice, what_feels_native, catchphrases
+- Used for data exploration and understanding the CSV structure
 ## Key Results
 - **20 creators scored** across all 5 dimensions
 - **Top tier (RECOMMENDED):** drgarima_mehta (48/85) — pediatrician + Hinglish + clinical format + native alignment
