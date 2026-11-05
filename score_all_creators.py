@@ -1,7 +1,10 @@
 import pandas as pd
 import json
+import os
 
-creators = pd.read_csv('creators.csv', encoding='latin1')
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(SCRIPT_DIR, 'little-joys-data')
+creators = pd.read_csv(os.path.join(DATA_DIR, 'creators.csv'), encoding='latin1')
 
 # All 20 creator handles from the CSV
 all_handles = creators['handle'].tolist()
